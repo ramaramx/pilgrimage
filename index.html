@@ -79,8 +79,8 @@
         orbitduration="50" throttle="70" startpercent=".07"
         groundcolor="#FDD9B5" sunintensity="0.7"></a-super-sky>
     
-     <a-entity id="environment" environment="preset: yapavai; skyType: none; dressing: stones; dressingColor: #C66344; seed: 6; playArea: 0.7; groundColor: #C66344; groundColor2: #c96b4b; active: true; skyColor: #FDD9B5; horizonColor: #bf854a; shadowSize: 12; lightPosition: 0.5 1 0; fog: 0.4; groundYScale: 6; dressingAmount: 11; dressingScale: 0.06; dressingOnPlayArea: 1; gridColor: #FDD9B5" shadow="" visible=""><a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #feecda; intensity: 0.6; groundColor: #C66344" visible=""></a-entity><a-entity class="environment" position="0.5 1 0" light="intensity: 0.6; shadowCameraLeft: -12; shadowCameraBottom: -12; shadowCameraRight: 12; shadowCameraTop: 12" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 6" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible=""></a-entity><a-sky radius="200" theta-length="110" class="environment" material="" visible="false" geometry=""></a-sky></a-entity>
-        
+     <a-entity id="environment" scale="2 2 6" environment="preset: yapavai; skyType: none; dressing: stones; dressingColor: #C66344; seed: 6; playArea: 0.7; groundColor: #C66344; groundColor2: #c96b4b; active: true; skyColor: #FDD9B5; horizonColor: #bf854a; shadowSize: 12; lightPosition: 0.5 1 0; fog: 0.4; groundYScale: 6; dressingAmount: 11; dressingScale: 0.06; dressingOnPlayArea: 1; gridColor: #FDD9B5" shadow="" visible=""><a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #feecda; intensity: 0.6; groundColor: #C66344" visible=""></a-entity><a-entity class="environment" position="0.5 1 0" light="intensity: 0.6; shadowCameraLeft: -12; shadowCameraBottom: -12; shadowCameraRight: 12; shadowCameraTop: 12" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="2 2 6" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible=""></a-entity><a-sky radius="200" theta-length="110" class="environment" material="" visible="false" geometry=""></a-sky></a-entity>
+     
 
     <!-- portal -->
     
@@ -95,16 +95,16 @@
     
     <!-- plane model -->
     
-    <a-plane src="#ashley" data-toggle="modal" data-target="#1ashley" position="46.82656 4.99542 49.66918" rotation="0 50 0" width="6.954" height="7.875" shadow="" material="" geometry="width: 6.36; height: 8"></a-plane>
-    <a-plane src="#zoe" data-toggle="modal" data-target="#2zoe" position="15.75818 6.57392 49.45706" rotation="0 50 0" width="6.36" height="8.448" shadow="" material="" geometry=""></a-plane>
-    <a-entity gltf-model="#walk-gltf" data-toggle="modal" data-target="#3walk" position="21.40632 4 23.80583" rotation="0 50 0" width="6.36" height="8.448" animation-mixer=""></a-entity>
-    <a-entity gltf-model="#apple" data-toggle="modal" data-target="#4apple" position="2.34591 3 -19.74325" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="2 2 2"></a-entity>
-    <a-entity gltf-model="#ocone-edward" data-toggle="modal" data-target="#5ocone" position="-5.47839 4 13.61412" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8"></a-entity>
-    <a-plane src="#fav1" data-toggle="modal" data-target="#favielle" position="-24.40769 8.66803 -14.62762" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8"></a-plane>
-    <a-plane src="#fav2" position="-18.88213 11.30416 -20.99514" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
-    <a-plane src="#fav3" position="-14.51012 11.23897 -26.42308" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
-    <a-plane src="#fav4" position="-19.005 5.91752 -21.2455" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
-    <a-plane src="#fav5" position="-14.52033 5.96254 -26.41091" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
+    <a-plane id="ashley" src="#ashley" data-toggle="modal" data-target="#1ashley" position="46.82656 4.99542 49.66918" rotation="0 50 0" width="6.954" height="7.875" shadow="" material="" geometry="width: 6.36; height: 8"></a-plane>
+    <a-plane id="zoe" src="#zoe" data-toggle="modal" data-target="#2zoe" position="15.75818 6.57392 49.45706" rotation="0 50 0" width="6.36" height="8.448" shadow="" material="" geometry="" geometry="width: 6.36; height: 8"></a-plane>
+    <a-entity id="walk" gltf-model="#walk-gltf"   position="21.40632 2 23.80583" rotation="0 50 0" width="6.36" height="8.448" animation-mixer="" shadow="" material="" geometry="width: 6.36; height: 8"><a-box depth="3" height="8" width="3" material="visible:false;" data-toggle="modal" data-target="#3walk"></a-box></a-entity>
+    <a-entity id="ocone" gltf-model="#ocone-edward" data-toggle="modal" data-target="#5ocone" position="-5.47839 4 13.61412" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8"></a-entity>
+    <a-entity id="apple" gltf-model="#apple" data-toggle="modal" data-target="#4apple" position="2.34591 3 -19.74325" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="2 2 2"></a-entity>
+    <a-plane src="#fav1" data-toggle="modal" data-target="#6favielle" position="-24.40769 8.66803 -14.62762" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8"></a-plane>
+    <a-plane src="#fav2" data-toggle="modal" data-target="#6favielle" position="-18.88213 11.30416 -20.99514" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
+    <a-plane src="#fav3" data-toggle="modal" data-target="#6favielle" position="-14.51012 11.23897 -26.42308" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
+    <a-plane src="#fav4" data-toggle="modal" data-target="#6favielle" position="-19.005 5.91752 -21.2455" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
+    <a-plane src="#fav5" data-toggle="modal" data-target="#6favielle" position="-14.52033 5.96254 -26.41091" rotation="0 50 0" width="3.4" height="4.4" shadow="" material="" geometry="width: 6.36; height: 8" scale="1 0.6 1"></a-plane>
     
 
     <!-- lighting -->
@@ -411,7 +411,7 @@
                   <div class="box1">Bryce Aspinall</div>
                 
                     <!-- <model-viewer> HTML element -->
-                   <model-viewer bounds="tight" enable-pan src="./assets/zoe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" background-color="#000000" shadow-intensity="1" autoplay camera-orbit="90.35deg 85.7deg auto">
+                   <model-viewer bounds="tight" enable-pan src="./assets/walker.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" background-color="#000000" shadow-intensity="1" autoplay camera-orbit="90.35deg 85.7deg auto">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -561,7 +561,7 @@
            <div class="modal-body">
             
             <div class="box0"><p>Adrian Ocone is a multimedia artist originally from Ojai California. They work between digital mediums, painting, drawing, sound performance, and sculpture. They are interested in collaborative relations, relations with tools, and structures of thinking in art making. They are currently completing a bachelors degree in painting at the Rhode Island School of Design. 
-
+              
               <br><br><br>
           Interview:
           <br><br>
@@ -597,6 +597,8 @@
             </div>
                 
                   <div class="box1">Adrian Ocone</div>
+                  <a href="https://earthtones.art/OCONE_PAGE/dome.html" class="link-ocone"
+                    >FORKS WASHINGTON PROJECTIONS</a>
                 
                     <!-- <model-viewer> HTML element -->
                    <model-viewer bounds="tight" enable-pan src="./assets/ocone-edward.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" background-color="#000000" shadow-intensity="1" autoplay camera-orbit="90.35deg 85.7deg auto">
@@ -610,6 +612,101 @@
                         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
                     </div>
                 </model-viewer>
+
+           </div>
+           </div>
+    
+         </div>
+       </div>
+
+       <!-- favielle -->
+       <div
+       class="modal fade modal-fullscreen footer-to-bottom"
+       id="6favielle"
+       tabindex="0"
+       role="dialog"
+       aria-labelledby="modal"
+       aria-hidden="true">
+         
+       <div class="modal-dialog animated fadeInDown">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button
+               type="button"
+               class="close"
+               data-dismiss="modal"
+               aria-hidden="true"
+             >
+             <i class="fa fa-times" aria-hidden="true"></i>
+             </button>
+           </div>
+           <div class="modal-body">
+            
+            <div class="box2"> <a href=../../pilgrimage.html> <svg fill="white" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,128.4 319.7,96 160,256 160,256 160,256 319.7,416 352,383.6 224.7,256 "/></svg></a> </div>
+
+  <div class="box0"><p>Favielle "Fav" Petit Clair (she/her) is a Queer Haitian emerging multidisciplinary textile artist based in Tiohtià:ke, Montreal.  She gained technical experience at the Centre des textiles Contemporains de Montréal (2019). She continues her studies at École des métiers des faubourgs-de-montréal in Fashion and Custom Clothing. With a focus on weaving, she revisits the stories of Black slaves and Afro-descendant individuals of North America and their relationship with the discipline. Petit Clair’s artistic and artisanal approach is a form of preservation of techniques and traditions in remembrance of those who weaved before her on this continent. 
+<br><br>
+
+1. Crossroads : Choosing in face of the linear, collage (2020)  8.5" x 11"<br>
+2. Pilgrimage I: The line, collage (2020)  8.5" x 11"<br>
+3. Pilgrimage II: When does it end?, collage (2020)  8.5" x 11"<br>
+4. Pilgrimage III: Agency, collage (2020)  8.5" x 11"<br>
+5. Pilgrimage IV: Infinity, collage (2020)  8.5" x 11"<br>
+
+
+    <br><br><br>
+Interview:
+<br><br>
+ET: Has a work of art ever changed you or been pivotal to your life or saved you <br><br>
+Fav: I haven’t realized how much music has shaped me. My life is really aligned with the music I listen to, the music I discover and the music I have listened to. When I listen to music I am conscious, you know. The weather, the light, the mood I'm in, the clothes I'm wearing. And if I had to pick one song that has been enlightening it would be the opening theme song of Steven Universe by Rebecca Sugars. *Sings* If I could begin to be half of what you think of me, I could do about anything, I could even learn how to love like you. Man, that’s the one…That’s the one.   <br><br>
+
+
+ET: What do you think of the professionalization of art<br><br>
+
+Fav: Yo! *Sighs* This is actually a dilemma of mine. I am actually a very private person and my art is, in my eyes, intimate. I feel like that professionalization of art  in way means being out there… naked *laughs*. Or, wait, I found my discomfort ! It’s actually this idea of success that comes with professionalization. To be professional to me is to aim for some sort of success. What are the scales of success when it comes to being a professional artist? To me, right now, in 2022, it would be making the people close to me proud. Success also looks like being a part of my community, able to afford a reasonable life, living at my own pace and keeping my privacy. I want it all you know and the idea of professionalization of my art makes me feel like I'm getting closer and further from that ideal of mine. But eh, life is long I have time to figure it out *laughs*.<br><br>
+
+
+ET: Do you think trauma is an overused word<br><br>
+
+Fav: I used to think it was… Until I came face to face with my own! I’m used to downplaying my traumas and it’s actually been very healing to confront them and be honest about them. When I first started dealing with my traumas I was surely overexposing myself to them. And to some extent still do… I think it is a trendy word right now and its position in culture is interesting. What does it mean about me, about us. This focus on trauma in my life has shed light on my desire to break this cycle. Trauma informed me of those heavy burden I was carrying and giving space to my trauma allowed me to open more space to my *thinks* peace, ease, healing… I don’t know if these are the right words, but when I look at my trauma it definitely makes me consider the idea of spaciousness. I make space within myself for empathy, patience, sadness, anger, love. This allows me to soothe my trauma.   <br><br>
+
+
+ET: How do you begin<br><br>
+
+Fav: I realized…Honestly I don’t *laughs*. I feel like I’m being meta for no reason, but this is how I think of my work ethics. I don’t begin and I don’t end, I continue. I’m always working and that actually soothes me. I’m a workaholic *laugh*. I laugh because, I realize that at 25 I'm really reframing the words that I use. Making them truly mine. So what I mean by I am a workaholic is that I love working and committing to projects. I love being busy even when it’s challenging. So when “start” a project it is actually the logical continuation of my train of thoughts. I find it uplifting to say “I am taking the next logical step”. And that can look like taking a break, eating, weaving, walking, listening to music, going to the library, looking at my notes etc. And from continuation there’s consistency, amelioration, discipline, commitment. My artistic path is a pilgrimage wink wink *laughs*. <br><br>
+
+
+ET: Do you have a routine<br><br>
+
+Fav: Ah yes ! I am but an animal of routine! My biggest routine is my morning habits. I am an early bird and if I sleep in UNSCHEDULED my day is…To me my day “ends” at 12pm so I usually get most of my laborious tasks before that. Homeworks, cleaning, meetings etc. Obviously it is more common to work in the afternoon so I adapted *laughs* Ideally I would work in the morning and enjoy the rest of my day. *Sighs* but the mornings are short…so short and the work piles up! But these short mornings are my moments. Oh! Also random urges to clean are part of my routine! These are the most exciting cleaning sessions I have, the rush of I don’t know what just taking over me and then boom I clean, until I’m satisfied or exhausted. <br><br>
+
+ET:  Do you define yourself as an artist, what qualities make that word for you<br><br>
+
+Fav: This goes back to the Steven Universe theme song written by Rebecca Sugar. I have discomfort thinking of myself as an artist. My friends, teachers and acquaintances consider me to be an artist. They say it with respect. Slow and steady are the qualities of an artist to me. I used to think I would never be an artist and now I'm applying to grants for emerging artists, you know? Who knows, maybe in 5 years I’ll be comfortable embodying what an artist is. <br><br>
+ET: What is your current obsession<br><br>
+Fav: Weirdly enough…I am obsessed with the color green that I consider my least favorite color ! I’m even wearing green ! *Laughs* Green! I was so adamant like 3 years ago about my hate for green. Oh how things change, I wonder if the color laughs at me. Poison green, jealous green, greedy green reframed in my life. I don’t know, I feel like it means something this shift. <br><br>
+
+ET: What is your current obsession<br><br>
+Fav: Weirdly enough…I am obsessed with the color green that I consider my least favorite color ! I’m even wearing green ! *Laughs* Green! I was so adamant like 3 years ago about my hate for green. Oh how things change, I wonder if the color laughs at me. Poison green, jealous green, greedy green reframed in my life. I don’t know, I feel like it means something this shift. <br><br>
+ET: What do you collect<br><br>
+Fav: I collect my thoughts, I write alot. Parcelles of words and ideas that I keep. Pieces of paper with my writings. I will collect a bunch of songs written down on multiple post-its. I will collect ideas I have, recipes, books to read all written down on multiple pieces of papers. When I have too much I discard them. Nonetheless it’s my collection. My favorite collection is the letters I have been given. I am attached to reading them. 
+</p>
+  </div>
+
+  <div class="box1">Favielle “Fav” Petit Clair</div>
+
+    <!-- <model-viewer> HTML element -->
+   <model-viewer bounds="tight" enable-pan src="./assets/favielle-popup.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" background-color="#000000" shadow-intensity="1" autoplay camera-orbit="90.35deg 85.7deg auto">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
 
            </div>
            </div>
